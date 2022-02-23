@@ -1,0 +1,54 @@
+//- index.pug
+doctype html
+html
+	head
+		style
+			include ../static/style.css
+	body
+		nav#navbar
+			ul
+				#logo
+					img(src="/static/logo.png")
+					| HDA
+				li #[a(href="/") Home]
+				li #[a(href="/") About]
+				li #[a(href="/") Services]
+				li #[a(href="/") Class Info]
+					li #[a(href="/") Contact Us]
+		section#introSection
+				div Welcome to Dance Academy
+				div Eat Sleep Dance Repeat
+		section#missionSection
+				h2 Our Mission
+				.card 
+						h3 Dance Perfection
+						.card-box
+							.card-img
+								img(src="/static/logo.png", alt="")
+							.card-content
+								p This is the best Dance Academy of the entire Universe
+				.card 
+						h3 Dance the way you like!
+						.card-box
+							.card-img
+								img(src="/static/logo.png", alt="")
+							.card-content
+								p This is the best Dance Academy of the entire Universe            
+				.card 
+						h3 Expert Teaching
+						.card-box
+							.card-img
+								img(src="/static/logo.png", alt="")
+							.card-content
+								p This is the best Dance Academy of the entire Universe            
+		section#sponserSection
+				h2 Our Sponsers
+				#sponsers
+					img(src="/static/sponsers/apple.png", alt="apple", class="spImage")
+					img(src="/static/sponsers/hp.png", alt="hp", class="spImage")
+					img(src="/static/sponsers/dell.png", alt="dell", class="spImage")
+					img(src="/static/sponsers/skype.png", alt="skype", class="spImage")
+		footer#Footer
+				| Copyright &copy; 2022 DanceAcademy.com. All Rights Reserved!
+		script
+			include ../static/index.js
